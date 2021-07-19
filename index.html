@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Start Your Search!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+	
+	<style>
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+ <!-- tab search and active -->
+ 
+.tab-search.active {
+    background-color: #f6bc25;
+    color: #004a80;
+}
+
+.tab-search.active {
+    background-color: #f6bc25;
+    color: #004a80;
+}
+.tab-search {
+    display: inline-block;
+    width: 178px;
+    height: 35px;
+    border: 5px solid #f6bc25;
+    background-color: #004a80;
+    color: #f6bc25;
+    margin: 5px;
+    padding: 1px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+<!-- @media (min-width: 768px)
+.col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+} -->
+  </style>
+  </head>
+  <body>
+    <nav class="navbar d-flex justify-content-between">
+      <div class="container">
+        <a href="./index.html">
+          <img src="img/logo.svg" width="173" height="25" alt="">
+        </a>
+        <div>
+          <img src="img/icn_search.svg" width="23" height="23" alt="Search">
+          <img class="ml-4" src="img/icn_person.svg" width="20" height="23"alt="Profile">
+        </div>
+      </div>
+    </nav>
+    <section class="above-the-fold">
+      <div class="container">
+        <div class="headline text-white text-center mb-4 mb-md-5">
+          <h1 class="mb-3">Start Your Search!</h1>
+          <h2>Look up for people’s name, photos and online profiles with their email address or phone number. See what you find!</h2>
+        </div>
+        
+         <form>
+          <div style="font-size: 15px; color: #fff">Type of Search</div>
+          <div class="tab-search email Search active" id="tabEmail">
+            EMAIL ADDRESS
+          </div>
+          <div class="tab-search phone Search number myclass" id="tabPhone">
+            PHONE NUMBER
+          </div>
+          <div class="input-group">
+            <input class="form-control" type="text" name="email" placeholder="Enter an Email Address" />
+            <p class="error-msg">Please enter a valid email address</p>
+			<input class="form-control" id="phonebox" type="text" name="phone number" placeholder="Enter an Phone Number" style="display:none;" />
+            <p class="error-msg">Please enter a valid phone number</p>
+            <button id="btn-search" class="btn btn-form-submit text-uppercase" type="submit">
+              Go!
+            </button>
+          </div>
+		  <span id="spnPhoneStatus"></span>
+          <div
+            class="d-flex justify-content-start justify-content-md-end align-items-center mt-4" >
+            <img src="img/lock.svg" alt="lock" />
+            <p class="form-subtext">People in the search won't be notified.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+   <section class="features">
+      <div class="container">
+        <div class="headline">
+          <h1 class="text-primary text-center mb-2 mb-md-4">
+            Here's How It Works
+          </h1>
+          <h2 class="text-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </h2>
+        </div>
+        <div class="row" style=".row:after content: "";display: table;clear:both;">
+        <div class="column">
+          <div class="list-item col-md-6 d-flex align-items-lg-center">
+            <div class="list-circle">1</div>
+            <div class="list-text">
+              <h3>Lorem Ipsum</h3>
+              <p  style="width:300px;text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="list-item col-md-6 d-flex align-items-lg-center">
+            <div class="list-circle">2</div>
+            <div class="list-text">
+              <h3>Lorem Ipsum</h3>
+              <p  style="width:300px;text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="list-item col-md-6 d-flex align-items-lg-center"  style="float:left">
+            <div class="list-circle">3</div>
+            <div class="list-text">
+              <h3>Lorem Ipsum</h3>
+              <p style="width:300px;text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="list-item col-md-6 d-flex align-items-lg-center">
+            <div class="list-circle">4</div>
+            <div class="list-text">
+              <h3>Lorem Ipsum</h3>
+              <p  style="width:300px;text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="list-item col-md-6 d-flex align-items-lg-center">
+            <div class="list-circle">5</div>
+            <div class="list-text">
+              <h3>Lorem Ipsum</h3>
+              <p  style="width:300px; text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="list-item col-md-6 d-flex align-items-lg-center"  style="float: left" >
+            <div class="list-circle">6</div>
+            <div class="list-text">
+              <h3>Lorem Ipsum</h3>
+              <p  style="width:300px; text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="col-md-2 text-center text-md-right pl-0 mt-3 mt-md-0">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+	<script>
+	var placeholder = $('#txtInput').attr('placeholder');
+
+$('#tabEmail').on('click', function() {
+	$('.form-control').attr('placeholder' ,'ENTER AN EMAIL ADDRESS');
+});
+
+$('#tabPhone').on('click', function() {
+	$('.form-control').attr('placeholder' ,'ENTER AN PHONE NUMBER');
+});
+	</script>
+	<script>
+$(document).ready(() => {
+  console.log("ready!");
+  //Active search type
+  $("#tabEmail").on("click", function () {
+    //Show hide tab. forms
+	//alert("hi");
+    $(".tab-search").removeClass("active");
+    $("#tabEmail").addClass("active");
+  });
+  $("#tabPhone").on("click", (e) => {
+    //Show hide tab. forms
+    $(".tab-search").removeClass("active");
+    $("#tabPhone").addClass("active");
+  });
+  $("#btn-search").on("click", function (){
+         ("#result").show();
+  
+    //Validate search input
+    //If validate
+    //1. show loading icon
+    //use ajax and called api
+    //On result disabled loading icon
+    //show results in above search form
+    //if not valid, show error
+  });
+});
+
+
+	</script>
+	<script>
+	$(document).ready(function() {
+    $('#phonebox').blur(function(e) {
+        if (validatePhone('phonebox')) {
+            $('#spnPhoneStatus').html('Valid');
+            $('#spnPhoneStatus').css('color', 'green');
+        }
+        else {
+            $('#spnPhoneStatus').html('Invalid');
+            $('#spnPhoneStatus').css('color', 'red');
+        }
+    });
+});
+
+function validatePhone(phonebox) {
+    var a = document.getElementById(phonebox).value;
+    var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+	</script>
+  </body>
+</html>
